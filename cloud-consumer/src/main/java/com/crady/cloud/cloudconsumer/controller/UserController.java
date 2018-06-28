@@ -28,7 +28,10 @@ public class UserController {
 
     @RequestMapping("say")
     public String say(){
-        return userService.hello("xiaoming");
+        long start = System.currentTimeMillis();
+        String result = userService.hello("xiaoming");
+        logger.info("调用say方法结束，耗时[{}]",System.currentTimeMillis() - start);
+        return result;
     }
 
     @RequestMapping("edit")

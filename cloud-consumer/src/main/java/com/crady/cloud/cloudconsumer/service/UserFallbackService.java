@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @desc: Feign服务降级demo
  * feign.hystrix.enabled=true开关一定要打开
  **/
-/**使用Fallback和FallbackFactory两者不能同时存,使用Fallback主要要修改映射路径不能喝接口一样，不然会报错**/
+/**使用Fallback和FallbackFactory两者不能同时存,使用Fallback主要要修改映射路径不能和接口一样，不然会报错**/
 //@FeignClient(value = "cloud-service",fallback = UserFallbackService.UserFallbackServiceFallback.class)
-@FeignClient(value = "cloud-service",fallbackFactory = UserFallbackService.UserServiceFallbackFactory.class)
+@FeignClient(value = "cloud-service/service",fallbackFactory = UserFallbackService.UserServiceFallbackFactory.class)
 public interface UserFallbackService extends com.crady.cloud.api.service.UserService {
 
     /**

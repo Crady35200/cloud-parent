@@ -20,13 +20,15 @@ public class UserController implements UserService {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     public String hello(String words) {
-        int timeout = new Random().nextInt(8000);
+        //测试服务降级和服务重试用
+/*        int timeout = new Random().nextInt(8000);
         try {
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        logger.info("Hi,{} ! 休眠：{}毫秒",words,timeout);
+        logger.info("Hi,{} ! 休眠：{}毫秒",words,timeout);*/
+        logger.info("Hi,{} !",words);
         return "Hi," + words + " !";
     }
 

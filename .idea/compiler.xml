@@ -10,6 +10,7 @@
         <module name="cloud-consumer" />
         <module name="cloud-register" />
         <module name="cloud-service" />
+        <module name="cloud-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

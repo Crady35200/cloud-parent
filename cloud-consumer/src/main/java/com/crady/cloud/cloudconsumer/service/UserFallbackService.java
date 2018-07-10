@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  **/
 /**使用Fallback和FallbackFactory两者不能同时存,使用Fallback主要要修改映射路径不能和接口一样，不然会报错**/
 //@FeignClient(value = "cloud-service",fallback = UserFallbackService.UserFallbackServiceFallback.class)
-@FeignClient(value = "cloud-service/service",fallbackFactory = UserFallbackService.UserServiceFallbackFactory.class)
+@FeignClient(value = "cloud-service/cloud-service",fallbackFactory = UserFallbackService.UserServiceFallbackFactory.class)
 public interface UserFallbackService extends com.crady.cloud.api.service.UserService {
 
     /**

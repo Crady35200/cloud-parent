@@ -7,15 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-api" />
+        <module name="cloud-bus" />
+        <module name="cloud-config-client" />
         <module name="cloud-config-server" />
         <module name="cloud-consumer" />
         <module name="cloud-register" />
         <module name="cloud-service" />
+        <module name="cloud-stream" />
         <module name="cloud-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aa" target="1.8" />
+      <module name="demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

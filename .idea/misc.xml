@@ -10,6 +10,10 @@
         <option value="$PROJECT_DIR$/cloud-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-bus/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-stream/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

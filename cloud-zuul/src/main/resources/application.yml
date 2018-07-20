@@ -1,0 +1,23 @@
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        serviceUrl:
+            defaultZone: http://localhost:8000/eureka
+logging:
+    level:
+        root: info
+server:
+    port: 8888
+    servlet:
+        context-path: /zuul
+spring:
+    application:
+        name: cloud-zuul
+zuul:
+    retryable: false
+    routes:
+        cloud-consumer:
+            strip-prefix: false
+        cloud-service:
+            strip-prefix: false

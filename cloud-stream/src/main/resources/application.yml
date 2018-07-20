@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: cloud-stream
+  rabbitmq:
+    host: 192.168.8.73
+    port: 5672
+    username: springcloud
+    password: 123456
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: test-group   #防止一个应用多个实例重复消费消息，故设置一个组，同一个组里面的实例只能有一个实例消费消息
+logging:
+    level:
+        root: info
+server:
+  port: 8888
+
